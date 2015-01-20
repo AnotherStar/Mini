@@ -8,4 +8,8 @@
 	<preference name="orientation" value="landscape"/>
 	<preference name="fullscreen" value="true"/>
 	<gap:plugin name="com.megster.cordova.bluetoothserial" />
+	<gap:plugin name="org.apache.cordova.dialogs" />
+	<gap:plugin name="org.apache.cordova.vibration" />
+	<gap:plugin name="org.apache.cordova.device-motion" />
+
 </widget>

@@ -7,18 +7,22 @@
     </head>
 
     <body>
-        Lorem ipsum
+        <div id="cons"></div>
     </body>
 </html>
 
-<script type="text/javascript" >
+<script type="text/javascript">
 
-	alert('js');
+	document.addEventListener("deviceready", onDeviceReady, false);
 
-	document.addEventListener('deviceready', function(){
-		alert(typeof bluetoothSerial);
-	}, false);
-	
-	alert('js 2');
+	function onDeviceReady(){
+		navigator.notification.vibrate(200);
+		alert(typeof window.Cordova);
+		html = '!!!';
+    	for(key in window.Cordova){
+    		html += key + '<br>';
+    	}
+    	cons.innerHTML = html;
+	};
 
 </script>
