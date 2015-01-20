@@ -11,7 +11,14 @@
     </body>
 </html>
 
-<script>
-   // app.initialize();
-   alert(bluetoothSerial);
+<script type="text/javascript" >
+
+	alert('js');
+
+	document.addEventListener('deviceready', function(){
+		alert(typeof bluetoothSerial);
+	}, false);
+	
+	alert('js 2');
+
 </script>
