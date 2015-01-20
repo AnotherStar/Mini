@@ -18,9 +18,9 @@
 	function onDeviceReady(){
 		//console.log('message');
 		navigator.notification.vibrate(200);
-		alert(typeof window.Cordova);
+		//alert(typeof window.Cordova);
 		html = '!!!';
-    	for(key in window.Cordova){
+    	for(key in window){
     		html += key + '<br>';
     	}
     	cons.innerHTML = html;
