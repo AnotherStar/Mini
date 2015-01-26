@@ -6,6 +6,9 @@ by Tom Igoe
 */
 
 alert('1');
+
+alert(typeof cordova);
+
 var bluetoothSerial = cordova.require('bluetoothSerial');
 
 alert(typeof bluetoothSerial);
